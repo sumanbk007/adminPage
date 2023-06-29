@@ -1,16 +1,26 @@
+body {
+  box-sizing: border-box;
+}
+
 a {
   list-style-type: none;
 }
 #nav {
   color: black;
 }
-
+/* 
 .nav-item .profile-one {
   margin-left: 30rem;
 }
-
+ */
 .nav-item .profile-menu {
-  margin-left: 30rem;
+  min-width: 8.5rem !important;
+}
+
+#navbar__links {
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 nav {
@@ -56,12 +66,21 @@ nav .navbar-brand:hover {
 #left-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   height: 80vh;
   gap: 2rem;
 }
 
+#content ul {
+  display: flex;
+  flex-direction: column;
+}
+#content ul li a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 #left-header {
   margin: 1rem;
 }
@@ -96,4 +115,10 @@ ul li .left-icons {
   color: white;
   cursor: pointer;
   display: none;
+}
+
+#left-logo {
+  display: none;
+  height: 4rem;
+  width: 4rem;
 }
