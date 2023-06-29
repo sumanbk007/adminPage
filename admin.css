@@ -1,0 +1,99 @@
+a {
+  list-style-type: none;
+}
+#nav {
+  color: black;
+}
+
+.nav-item .profile-one {
+  margin-left: 30rem;
+}
+
+.nav-item .profile-menu {
+  margin-left: 30rem;
+}
+
+nav {
+  background-color: black;
+  position: relative;
+}
+
+ul,
+li .nav-link {
+  color: white;
+}
+
+ul,
+li .nav-link:hover {
+  color: white;
+}
+
+nav .navbar-brand {
+  color: white;
+}
+nav .navbar-brand:hover {
+  color: white;
+}
+
+#navbar {
+  width: 100%;
+  position: relative;
+  padding-left: 15%;
+}
+
+/* Leftnavbar */
+
+.left-navbar {
+  background-color: #2460b9;
+  width: 15%;
+  height: 100vh;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  gap: 2rem;
+}
+
+#left-header {
+  margin: 1rem;
+}
+
+ul li .left-icons {
+  margin-right: 5px;
+}
+
+#section-content {
+  background-color: red;
+  height: 500px;
+  padding-left: 15%;
+}
+.section-image {
+  height: 200px;
+  width: 300px;
+  z-index: 999;
+}
+
+#left-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-less-than {
+  color: white;
+  cursor: pointer;
+}
+
+.fa-greater-than {
+  color: white;
+  cursor: pointer;
+  display: none;
+}
