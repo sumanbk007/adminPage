@@ -1,6 +1,12 @@
 body {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+/* 
+html {
+  font-size: 62.5%;
+} */
 
 a {
   list-style-type: none;
@@ -8,11 +14,7 @@ a {
 #nav {
   color: black;
 }
-/* 
-.nav-item .profile-one {
-  margin-left: 30rem;
-}
- */
+
 .nav-item .profile-menu {
   min-width: 8.5rem !important;
 }
@@ -40,6 +42,7 @@ li .nav-link:hover {
 
 nav .navbar-brand {
   color: white;
+  margin: 0 !important;
 }
 nav .navbar-brand:hover {
   color: white;
@@ -56,11 +59,14 @@ nav .navbar-brand:hover {
 .left-navbar {
   background-color: #2460b9;
   width: 15%;
-  height: 100vh;
-  z-index: 0;
+  height: auto;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+#left-navbar .nav_logo-icon {
+  color: white;
 }
 
 #left-content {
@@ -68,29 +74,37 @@ nav .navbar-brand:hover {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  height: 80vh;
-  gap: 2rem;
 }
 
-#content ul {
+.nav__items {
+  margin-bottom: 15px;
+  height: 40px;
+  width: 15%;
+}
+
+#content .left-ul {
   display: flex;
   flex-direction: column;
 }
+
 #content ul li a {
   display: flex;
   align-items: center;
-  gap: 5px;
 }
 #left-header {
-  margin: 1rem;
+  margin: 10px;
 }
 
 ul li .left-icons {
   margin-right: 5px;
 }
 
+.fa-greater-than {
+  margin: 15px;
+}
+/* 
 #section-content {
-  background-color: red;
+  background-color: white;
   height: 500px;
   padding-left: 15%;
 }
@@ -98,7 +112,7 @@ ul li .left-icons {
   height: 200px;
   width: 300px;
   z-index: 999;
-}
+} */
 
 #left-header {
   display: flex;
@@ -109,6 +123,7 @@ ul li .left-icons {
 .fa-less-than {
   color: white;
   cursor: pointer;
+  margin: 0 !important;
 }
 
 .fa-greater-than {
@@ -117,8 +132,176 @@ ul li .left-icons {
   display: none;
 }
 
-#left-logo {
+.transistion-class {
+  transition: padding-left 0.4s ease;
+}
+
+.transistion-width {
+  transition: width 0.3s ease;
+}
+
+#sign-out {
+  margin-top: 20px;
+}
+
+.dropdown .dropdown-leftbar {
+  position: relative;
+  z-index: 0 !important;
+  border: none;
+  outline: none;
+  height: 5rem;
+  width: 10rem;
+  background-color: #047ab6;
+
+  margin-left: 1rem;
+}
+
+.dropdown-menu .dropdown-items {
+  padding-left: 50px;
+  color: white;
+}
+
+.dropdown-toggle {
+  color: white !important;
+}
+
+.top-icons {
   display: none;
-  height: 4rem;
-  width: 4rem;
+}
+
+/* Responsiveness for laptops */
+
+@media screen and (max-width: 1160px) {
+  .nav__items {
+    margin-bottom: 5px;
+  }
+
+  #left-header {
+    font-size: 0.9rem;
+  }
+
+  #navbar-brands {
+    font-size: 1.1rem;
+  }
+
+  #left-content {
+    justify-content: center;
+  }
+
+  .left-ul {
+    font-size: 0.9rem;
+  }
+
+  #left-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: end; */
+    /* align-items: flex-end; */
+  }
+}
+
+@media screen and (max-width: 1032px) {
+  #left-header {
+    margin: 10px 3px;
+    gap: 2px;
+    font-size: 0.8rem;
+  }
+  #left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+  }
+
+  .nav__items {
+    padding-left: 25px;
+  }
+
+  #navbar-brands {
+    font-size: 1rem;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+  span.nav-name {
+    display: none !important;
+  }
+
+  #less-then {
+    display: none;
+  }
+
+  #navbar-brands {
+    font-size: 0.9rem;
+  }
+
+  #navbar-brandss {
+    font-size: 0.9rem;
+  }
+
+  #left-header {
+    justify-content: space-around;
+    gap: 2px;
+
+    font-size: 0.9rem;
+    padding-top: 4px;
+
+    margin: 10px 1px;
+  }
+
+  ul li a span.topNav-name {
+    font-size: 0.9rem;
+  }
+} */
+
+@media screen and (max-width: 820px) {
+  #navbar-brands {
+    display: none;
+  }
+
+  #navbar {
+    padding-left: 8%;
+  }
+  span.nav-name {
+    display: none !important;
+  }
+
+  #less-then {
+    display: none;
+  }
+
+  #left-navbar {
+    width: 68px;
+  }
+
+  #left-header {
+    margin-top: 13px;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin: 10px 0;
+    padding-right: 7px;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  #left-navbar {
+    display: none;
+  }
+
+  #navbar {
+    padding: 0;
+    height: 4rem;
+  }
+
+  .top-icons {
+    display: block;
+  }
+
+  .topNav-name {
+    display: none;
+  }
+
+  .nav .dropdown .topNavBar {
+    display: flex;
+  }
 }

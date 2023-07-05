@@ -1,4 +1,166 @@
-.lheading {
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  list-style-type: none;
+}
+#nav {
+  color: black;
+}
+
+.nav-item .profile-menu {
+  min-width: 8.5rem !important;
+}
+
+#navbar__links {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+nav {
+  background-color: black;
+  position: relative;
+}
+
+ul,
+li .nav-link {
+  color: white;
+}
+
+ul,
+li .nav-link:hover {
+  color: white;
+}
+
+nav .navbar-brand {
+  color: white;
+}
+nav .navbar-brand:hover {
+  color: white;
+}
+
+#navbar {
+  width: 100%;
+}
+
+#top-navbar {
+  width: 85%;
+  position: relative;
+  left: 101px;
+  top: 0;
+}
+
+/* Leftnavbar */
+
+.left-navbar {
+  background-color: #2460b9;
+  width: 15%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+#left-navbar .nav_logo-icon {
+  color: white;
+}
+
+#left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.nav__items {
+  margin-bottom: 15px;
+  height: 40px;
+  width: 190px;
+}
+
+#content .left-ul {
+  display: flex;
+  flex-direction: column;
+}
+
+#content ul li a {
+  display: flex;
+  align-items: center;
+}
+#left-header {
+  margin: 10px;
+}
+
+ul li .left-icons {
+  margin-right: 5px;
+}
+
+.fa-greater-than {
+  margin: 15px;
+}
+/* 
+#section-content {
+  background-color: white;
+  height: 500px;
+  padding-left: 15%;
+}
+.section-image {
+  height: 200px;
+  width: 300px;
+  z-index: 999;
+} */
+
+#left-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-less-than {
+  color: white;
+  cursor: pointer;
+}
+
+.fa-greater-than {
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.transistion-class {
+  transition: padding-left 0.4s ease;
+}
+
+.transistion-width {
+  transition: width 0.3s ease;
+}
+
+#sign-out {
+  margin-top: 20px;
+}
+
+.dropdown .dropdown-leftbar {
+  position: relative;
+  z-index: 0 !important;
+  border: none;
+  outline: none;
+  height: 5rem;
+  width: 10rem;
+  background-color: #047ab6;
+
+  margin-left: 1rem;
+}
+
+.dropdown-menu .dropdown-items {
+  padding-left: 50px;
+  color: white;
+}
+
+.dropdown-toggle {
+  color: white !important;
 }
