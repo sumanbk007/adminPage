@@ -76,6 +76,10 @@ nav .navbar-brand:hover {
   align-items: center;
 }
 
+#left-navbar #content #left-ul {
+  width: 15%;
+}
+
 .nav__items {
   margin-bottom: 15px;
   height: 40px;
@@ -200,7 +204,7 @@ ul li .left-icons {
   }
 }
 
-@media screen and (max-width: 1032px) {
+@media screen and (max-width: 1032px) and (min-width: 821px) {
   #left-header {
     margin: 10px 3px;
     gap: 2px;
@@ -219,6 +223,14 @@ ul li .left-icons {
 
   #navbar-brands {
     font-size: 1rem;
+  }
+
+  #content {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    padding: 0;
+    width: 190%;
   }
 }
 
@@ -260,7 +272,7 @@ ul li .left-icons {
   }
 
   #navbar {
-    padding-left: 8%;
+    padding-left: 5rem;
   }
   span.nav-name {
     display: none !important;
@@ -283,14 +295,26 @@ ul li .left-icons {
   }
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 600px) {
   #left-navbar {
-    display: none;
+    z-index: 999;
+    width: 100%;
+    left: -600px;
+    top: 64px;
+    transition: 0.6s ease;
   }
 
   #navbar {
     padding: 0;
     height: 4rem;
+  }
+
+  span.nav-name {
+    display: block !important;
+  }
+
+  .nav_logo-icon {
+    display: none;
   }
 
   .top-icons {
@@ -303,5 +327,30 @@ ul li .left-icons {
 
   .nav .dropdown .topNavBar {
     display: flex;
+  }
+
+  #toggle-button {
+    font-size: 2rem;
+    color: white;
+  }
+
+  #cross-btn {
+    font-size: 2rem;
+    color: white;
+    display: none;
+  }
+
+  #navbar__links {
+    gap: 5px;
+  }
+
+  #navbar-brandss {
+    font-size: 1.5rem;
+    margin-left: 13px;
+  }
+
+  #nav-link1 {
+    padding-left: 27px;
+    padding-right: 0;
   }
 }
