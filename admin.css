@@ -54,15 +54,20 @@ nav .navbar-brand:hover {
   padding-left: 15%;
 }
 
+.shadow-dropdown {
+  margin-bottom: 0;
+}
+
 /* Leftnavbar */
 
 .left-navbar {
   background-color: #2460b9;
   width: 15%;
-  height: auto;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
+  /* transition: 0.5s; */
 }
 
 #left-navbar .nav_logo-icon {
@@ -73,7 +78,7 @@ nav .navbar-brand:hover {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: center;
+  /* align-items: center; */
 }
 
 #left-navbar #content #left-ul {
@@ -83,7 +88,8 @@ nav .navbar-brand:hover {
 .nav__items {
   margin-bottom: 15px;
   height: 40px;
-  width: 15%;
+  width: 200px;
+  gap: 1rem;
 }
 
 #content .left-ul {
@@ -137,11 +143,15 @@ ul li .left-icons {
 }
 
 .transistion-class {
-  transition: padding-left 0.4s ease;
+  transition: 0.3s ease;
 }
 
 .transistion-width {
-  transition: width 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.nav-name {
+  transition: 0.1s ease;
 }
 
 #sign-out {
@@ -153,11 +163,14 @@ ul li .left-icons {
   z-index: 0 !important;
   border: none;
   outline: none;
-  height: 5rem;
+  height: 6.5rem;
   width: 10rem;
-  background-color: #047ab6;
 
   margin-left: 1rem;
+
+  border-radius: 2pxpx;
+  background: #4e528d;
+  box-shadow: 20px 20px 48px #424678, -20px -20px 48px #5a5ea2;
 }
 
 .dropdown-menu .dropdown-items {
@@ -186,6 +199,8 @@ ul li .left-icons {
 
   #navbar-brands {
     font-size: 1.1rem;
+
+    transition: 0.3s ease;
   }
 
   #left-content {

@@ -15,47 +15,61 @@
   </head>
   <body>
     <nav id="navbar" class="navbar navbar-expand-lg transistion-class">
-      <div
-        id="top-navbar"
-        class="container-fluid justify-content-space-between"
-      >
-        <div id="navbar__links">
-          <a id="navbar-brand" class="navbar-brand" href="#">IT-IM System</a>
+      <div id="top">
+        <div class="first">
+          <!-- Arrow div -->
+          <div id="topnavbar-arrow">
+            <div id="arrow">
+              <i id="less-then" class="fa-solid fa-less-than"></i>
+            </div>
+          </div>
 
-          <ul class="nav">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                id="nav-link"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+          <!-- Top navbar -->
+          <div
+            id="top-navbar"
+            class="container-fluid justify-content-space-between"
+          >
+            <div class="topbar-content">
+              <a id="navbar-brand" class="navbar-brand" href="#"
+                >IT-IM System</a
               >
-                Monitor
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">List1</a></li>
-                <li><a class="dropdown-item" href="#">List2</a></li>
-              </ul>
-            </li>
 
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Management
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">List1</a></li>
-                <li><a class="dropdown-item" href="#">List2</a></li>
+              <ul class="nav">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    id="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span class="topNav-name">Monitor </span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">List1</a></li>
+                    <li><a class="dropdown-item" href="#">List2</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span class="topNav-name">Management</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">List1</a></li>
+                    <li><a class="dropdown-item" href="#">List2</a></li>
+                  </ul>
+                </li>
               </ul>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
 
         <div id="nav--Profile">
@@ -78,141 +92,134 @@
           </ul>
         </div>
       </div>
-
-      <div id="left-navbar" class="left-navbar transistion-width">
-        <header id="left-header">
-          <i class="fas fa-chart-line nav_logo-icon"></i>
-          <a id="navbar-brands" class="navbar-brand" href="#">IT-IM System </a>
-          <i id="less-then" class="fa-solid fa-less-than"></i>
-          <i id="greater-then" class="fa-solid fa-greater-than nav__links"></i>
-        </header>
-
-        <div id="left-content">
-          <div id="content">
-            <ul class="nav left-ul">
-              <li class="nav-item">
-                <a class="nav-link nav__items" href="#"
-                  ><i class="left-icons fa-solid fa-gauge"></i>
-                  <span class="nav-name">Dashboard</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav__items" href="#"
-                  ><i class="left-icons fa-solid fa-share-nodes"></i>
-                  <span class="nav-name">Nodes</span>
-                </a>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link nav__items dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  border-none
-                  outline-none
-                >
-                  <i class="left-icons fa-solid fa-gears"></i>
-                  <span class="nav-name dropdown-name">Configurations</span>
-                </a>
-                <ul class="dropdown-menu dropdown-leftbar">
-                  <li>
-                    <a class="dropdown-item dropdown-items" href="#">List1</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item dropdown-items" href="#">List2</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link nav__items" href=""
-                  ><i class="left-icons fa-solid fa-location-dot"></i>
-                  <span class="nav-name">Locations </span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav__items" href=""
-                  ><i class="left-icons fa-solid fa-map"></i>
-                  <span class="nav-name">Device locations</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav__items" href=""
-                  ><i class="left-icons fa-solid fa-sitemap"></i>
-                  <span class="nav-name">Architecture</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav__items" href=""
-                  ><i class="left-icons fa-solid fa-layer-group"></i>
-                  <span class="nav-name">Groups/tags</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav__items" href="">
-                  <i class="left-icons fa-solid fa-users"></i>
-                  <span class="nav-name">Users</span>
-                </a>
-              </li>
-
-              <!-- <li class="nav-item">
-                <a class="nav-link nav__items" href=""
-                  ><i class="left-icons fa-solid fa-gears"></i>
-                  <span class="nav-name">Configurations</span>
-                </a>
-              </li> -->
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link nav__items dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  border-none
-                  outline-none
-                >
-                  <i class="left-icons fa-solid fa-gears"></i>
-                  <span class="nav-name dropdown-name">Configurations</span>
-                </a>
-                <ul class="dropdown-menu dropdown-leftbar">
-                  <li>
-                    <a class="dropdown-item dropdown-items" href="#">List1</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item dropdown-items" href="#">List2</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link nav__items" href=""
-                  ><i class="left-icons fa-sharp fa-solid fa-user-secret"></i>
-                  <span class="nav-name">User configurations</span>
-                </a>
-              </li>
-
-              <li class="nav-item" id="sign-out">
-                <a class="nav-link nav__items" href=""
-                  ><i
-                    class="left-icons fa-solid fa-arrow-right-from-bracket"
-                  ></i>
-                  <span class="nav-name">Sign Out</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </nav>
 
+    <div id="left-navbar" class="left-navbar transistion-width">
+      <header id="left-header">
+        <i class="fas fa-chart-line nav_logo-icon"></i>
+        <a id="navbar-brands" class="navbar-brand" href="#">IT-IM System </a>
+      </header>
+
+      <div id="content">
+        <ul class="nav left-ul">
+          <li class="nav-item">
+            <a class="nav-link nav__items" href="#"
+              ><i class="left-icons fa-solid fa-gauge"></i>
+              <span class="nav-name">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav__items" href="#"
+              ><i class="left-icons fa-solid fa-share-nodes"></i>
+              <span class="nav-name">Nodes</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link nav__items" href=""
+              ><i class="left-icons fa-solid fa-location-dot"></i>
+              <span class="nav-name">Locations</span>
+            </a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link nav__items dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              border-none
+              outline-none
+            >
+              <i class="left-icons fa-solid fa-gears"></i>
+              <span class="nav-name dropdown-name">Configurations</span>
+            </a>
+            <ul class="dropdown-menu dropdown-leftbar">
+              <li>
+                <a class="dropdown-item dropdown-items" href="#">List1</a>
+              </li>
+              <li>
+                <a class="dropdown-item dropdown-items" href="#">List2</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link nav__items" href=""
+              ><i class="left-icons fa-solid fa-map"></i>
+              <span class="nav-name">Device locations</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav__items" href=""
+              ><i class="left-icons fa-solid fa-sitemap"></i>
+              <span class="nav-name">Architecture</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav__items" href=""
+              ><i class="left-icons fa-solid fa-layer-group"></i>
+              <span class="nav-name">Groups/tags</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav__items" href="">
+              <i class="left-icons fa-solid fa-users"></i>
+              <span class="nav-name">Users</span>
+            </a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link nav__items dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              border-none
+              outline-none
+            >
+              <i class="left-icons fa-solid fa-gears"></i>
+              <span class="nav-name dropdown-name">Configurations</span>
+            </a>
+            <ul class="dropdown-menu dropdown-leftbar">
+              <li>
+                <a class="dropdown-item dropdown-items" href="#">List1</a>
+              </li>
+              <li>
+                <a class="dropdown-item dropdown-items" href="#">List2</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link nav__items" href=""
+              ><i class="left-icons fa-sharp fa-solid fa-user-secret"></i>
+              <span class="nav-name">User configurations</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="sign-out">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link nav__items" href=""
+              ><i class="left-icons fa-solid fa-arrow-right-from-bracket"></i>
+              <span class="nav-name">Sign Out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <section id="section-content" class="transistion-class">
-      <!-- <div class="section-content">
+      <div class="section-contents">
         <h1>Hello div</h1>
       </div>
-      <img
+
+      <!-- <img
         class="section-image"
         src="images/Coins graph, Money graph on a white.jfif"
         alt=""
@@ -228,7 +235,7 @@
         class="section-image"
         src="images/Паевые инвестиционные фонды (ПИФы) - что это, простыми словами.jfif"
         alt=""
-      /> -->
+      />  -->
     </section>
 
     <script

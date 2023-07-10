@@ -1,57 +1,62 @@
-var lessthan = document.getElementById("less-then")
-var greaterthan = document.getElementById("greater-then")
+document.addEventListener("DOMContentLoaded", (event) => {
+  console.log("It's working")
+  var lessthan = document.getElementById("less-then")
+  var greaterthan = document.getElementById("greater-then")
 
-var navBar = document.getElementById("navbar")
-var leftUl = document.getElementById("left-ul")
+  var navBar = document.getElementById("navbar")
+  var leftUl = document.getElementById("left-ul")
 
-var navName = document.querySelectorAll(".nav-name")
-var navItems = document.querySelectorAll(".nav__items")
+  var navName = document.querySelectorAll(".nav-name")
 
-var leftNavBar = document.getElementById("left-navbar")
+  var navItems = document.querySelectorAll(".nav__items")
 
-var navBrand = document.getElementById("navbar-brands")
-var navBrands = document.getElementById("navbar-brandss")
+  var leftNavBar = document.getElementById("left-navbar")
 
-var sectionContent = document.getElementById("section-content")
+  var navBrand = document.getElementById("navbar-brands")
+  var navBrands = document.getElementById("navbar-brandss")
 
-var leftLogo = document.getElementById("left-logo")
+  var sectionContent = document.getElementById("section-content")
 
-lessthan.addEventListener("click", () => {
-  greaterthan.style.display = "block"
-  lessthan.style.display = "none"
-  navBrand.style.display = "none"
+  var leftLogo = document.getElementById("left-logo")
 
-  navBar.style.paddingLeft = "5%"
-  leftNavBar.style.width = "5%"
-  console.log(navName)
-  sectionContent.style.paddingLeft = "5%"
+  lessthan.addEventListener("click", () => {
+    greaterthan.style.display = "block"
+    lessthan.style.display = "none"
+    navBrand.style.display = "none"
 
-  for (let i = 0; i < navName.length; i++) {
-    navName[i].style.display = "none"
-  }
+    navBar.style.paddingLeft = "5%"
+    leftNavBar.style.width = "5%"
+    leftUl.style.width = "5%"
+    // console.log(navName)
+    sectionContent.style.paddingLeft = "5%"
 
-  for (let i = 0; i < navItems.length; i++) {
-    navItems[i].style.width = "54px"
-  }
-})
+    for (let i = 0; i < navName.length; i++) {
+      // navName[i].style.marginLeft = "2.1rem"
+    }
 
-greaterthan.addEventListener("click", () => {
-  greaterthan.style.display = "none"
-  leftUl.style.width = "15%"
-  navBar.style.paddingLeft = "15%"
-  leftNavBar.style.width = "15%"
-  sectionContent.style.paddingLeft = "15%"
+    for (let i = 0; i < navItems.length; i++) {
+      navItems[i].style.width = "54px"
+    }
+  })
 
-  lessthan.style.display = "block"
+  greaterthan.addEventListener("click", () => {
+    greaterthan.style.display = "none"
+    leftUl.style.width = "15%"
+    navBar.style.paddingLeft = "15%"
+    leftNavBar.style.width = "15%"
+    sectionContent.style.paddingLeft = "15%"
 
-  navBrand.style.display = "block"
+    lessthan.style.display = "block"
 
-  for (let i = 0; i < navName.length; i++) {
-    navName[i].style.display = "block"
-  }
-  for (let i = 0; i < navItems.length; i++) {
-    navItems[i].style.width = "15%"
-  }
+    navBrand.style.display = "block"
+
+    for (let i = 0; i < navName.length; i++) {
+      navName[i].style.marginLeft = "0"
+    }
+    for (let i = 0; i < navItems.length; i++) {
+      navItems[i].style.width = "15%"
+    }
+  })
 })
 
 // Toggle-button
