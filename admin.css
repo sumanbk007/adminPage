@@ -168,9 +168,9 @@ ul li .left-icons {
 
   margin-left: 1rem;
 
-  border-radius: 2pxpx;
+  /* border-radius: 2pxpx;
   background: #4e528d;
-  box-shadow: 20px 20px 48px #424678, -20px -20px 48px #5a5ea2;
+  box-shadow: 20px 20px 48px #424678, -20px -20px 48px #5a5ea2; */
 }
 
 .dropdown-menu .dropdown-items {
